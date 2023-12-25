@@ -1,0 +1,1 @@
+enum RentType { automated, classic }

@@ -1,0 +1,299 @@
+{
+
+  "signIn": "Login",
+  "signUp": "Sign Up",
+  "noCarsNow": "No Cars Available Now In This Branch",
+  "editPersonalInformation": "Edit Personal Information",
+  "editPassowrd": "Edit password",
+  "carPrice": "Car Price",
+  "rentedCar": "Rented Car",
+  "changeCar": "Change Car",
+  "addLicense": "Add Licenses",
+  "selectCountry": "Nationality",
+  "enterMobileNumber": "Enter Mobile Number",
+  "bookingDays": "Booking Days : ",
+  "addToCard": "add ToCard",
+  "choosefromthelistofadditionalservices": "Choose from the list of additional services",
+  "receive": "Receive",
+  "deliver": "Delivery Charge",
+  "payDetails": "Pay Details",
+  "invoice": " Invoice",
+  "missedDropOff": "You’ve missed the drop-off time, please Continue to pay for the extra duration.",
+  "sameCard": " we will use the same card you used to rent the car.",
+  "noTax": "The customer has no financial obligations",
+  "tax": "Total With TAX:",
+  "fuel": "gasoline difference",
+  "completeAccInfo": "All required personal data must be entered To make a car reservation request.",
+  "personalData": "Personal Data",
+  "birthDate": "Birth Date",
+  "address2": "Address",
+  "nationality": "Nationality",
+  "licenceData": "Personal card data / residence",
+  "endDate": "End Date",
+  "licenseIDNum": "license ID Number",
+  "coyNum": "Version ID",
+  "licence" : "Licence Data",
+  "save" : "Save",
+  "phoneNumber": "Email Or Phone",
+  "fullName": "Full Name",
+  "password": "Password",
+  "emailAddress": "Email Address",
+  "agreeTermsAndConditions": "Agree Terms And Conditions",
+  "sendAgain": "Didn't receive the code?",
+  "sendAgain2": "Send Code Again",
+  "skip": "Skip",
+  "changePassword" : "Change Password Via SMS\n",
+  "changePasswordDesc" : "Kindly Enter Your Phone",
+  "send" : "Send",
+  "uploadedSuccessfully": "successfully",
+  "otpCode" : "OTP Code\n",
+  "otpDesc" : "kindly enter your verification code",
+  "confirm" : "Confirm",
+
+  "resetPassword" : "Reset Password \n",
+  "resetDesc" : "Kindly Enter Your New Password",
+  "resetButton" : "Reset",
+
+  "done" : "All Done",
+  "doneDesc" : "Password Reseted Successfully",
+  "doneButton" : "Login Now",
+
+  "resetError" : "Oops",
+  "resetErrorDesc" : "Something Went Wrong",
+  "resetErrorButton" : "Go Back",
+  
+  "forgetPassword": "Forget Password?",
+  "pleaseEnterValidCredit": "Please Enter Valid Credit",
+    "enterValidCVV": "Please Enter Valid CVV",
+    "pleaseEnterPassword": "Please Enter Password",
+    "passwordNotMatching": "Password Are Not Matching",
+    "pleaseEnterNumberMinimum": "Enter Number Minimum 9  ",
+    "pleaseEnterPhoneNumber": "Please Enter Phone Number",
+    "doneEditProfile": "Done Edit Profile",
+    "enterValidEmail": "Enter Valid Email",
+    "pleaseEnterEmail": "Please enter email",
+    "pleaseEnterName": "Please enter name",
+    "enterNameMiniChars": "Please enter name minimum 5 characters ",
+    "continuePaymentProcess": "Continue",
+    "pleaseWaitWhileLoading": "Please Wait While Loading Cars",
+    "hello":"hello",
+    "carDetails":"Car Details",
+    "usability" : "Usability",
+    "usabilitydesc" : "You Can Use Our App In The Easiest Way Ever With Awesome Interface Anytime You Want.",
+    "time" : "Time",
+    "timedesc" : "We Value The Importance Of Time To You, Rent Your Car In A Few Seconds.",
+    "ourcars" : "Our Cars",
+    "ourcarsdesc" : "We Offer The Best Collection Of Cars Which Are Ready For You Anytime.",
+    "changeLanguagh":"Change Languagh",
+
+
+    "myAccount" : "My Account",
+    "accountInfo" : "Account Info",
+    "myWallet" : "My Wallet",
+
+    
+
+    "myBooking" : "My Booking",
+   
+    "pickUp" : "Pick Up",
+    "dropOff" : "Drop Off",
+
+
+    "aboutUs" : "About Us",
+    "pleaseChekReceiveAndDeliverLocation":"Please Chek Receive AndDeliver Location",
+    
+
+    "support" : "Support",
+    
+    "faq" : "FAQ",
+
+
+    "settings" : "Settings",
+    "logout" : "Log Out",
+
+
+    "homeTitle" : "Get Car Into Your Pocket",
+    "pickUpLocation" : "Choose Pick Up Location",
+    "sameLocation" : "Deliver To The Same Location",
+    "dropOffLocation" : "Choose Drop Off Location",
+    "search" : "Search",
+
+    "licenseID" : "License ID",
+    "editName" : "Edit Name",
+    "editEmail" : "Edit Email",
+    "editPhone" : "Edit phone",
+    "newPassowrd" : "New Password",
+    "confirmPassword" : "Confirm Password",
+
+    "addNewCard" : "Add Card",
+    "emptyWallet" : "No Wallet Are Found",
+ 
+    
+    "myOrders" : "My Orders",
+    "ongoing" : "Ongoing",
+    "completed" : "Completed",
+    "canceled" : "Canceled",
+
+
+    "ourServices" : "Our Services",
+    "chauffeurRent" : "Chauffeur Rent",
+    "chauffeurDesc" : "We can assist you in streamlining your search for the top chauffeur-driven car so that you won't have to worry about anything.",
+    "selfDriveRent" : "Self Drive Rent",
+    "selfDriveDesc" : "No need to deal with vehicle dealers or visit the auto dealership.Choose a Car.Confirm BookingKeys are in the vehicle, Enjoy Your Journey.",
+    "tryButton" : "Try Now",
+    "privacyPolicy" : "Privacy Policy",
+
+
+    "whoWeAre" : "Who We Are",
+    "whoWeAreDesc" : "4GO was founded in 2022\n4GO is the largest E-car in KSA, where you can book any car you want, Without any interaction with humans. from the ground up.",
+    "ourVision" : "Our Vision",
+    "ourVisionDesc" : "Is to become the leading brand in the rental cars digital industry, to have the widest network of branches in GCC, and providing our clients with reliable services.",
+    "ourMission" : "Our Mission",
+    "ourMissionDesc" : "Our mission is to offer the best car rental options in the Market, and make sure to get user satisfaction from the beginning to the end of the trip.",
+    "ourTeam" : "Our Team",
+    "ourTeamDesc" : "Is composed of people with a variety of skills, abilities, and experiences working in a dynamic environment that promotes the sharing of their unique experience.",
+
+    "howAppWorks" : "How App Works?",
+    "work1" : "Log Into Your Account.",
+    "work2" : "Choose Your Pick Up And Drop Off Details (Location / Date&Time).",
+    "work3" : "Select Your Favorite Car.",
+    "work4" : "Pay With Your Credit Card.",
+    "work5" : "Go Get Your Car From your Choosen Pick up Location.",
+    "work6" : "Scan The QR Code which you Can find on the windshield of the car.",
+    "work7" : "Take Images For Each Side Of The car.",
+    "work8" : "Enjoy Your Trip.",
+
+
+    "policies" : "Policies",
+    "foreword" :"1- Foreword:",
+    "forewordDesc" : "This electronic portal for the 4GO Company for car rental (4GO CAR RENTAL) in the Kingdom of Saudi Arabia, which is referred to hereinafter as the 4GO application, is available for use by companies. In addition, and the customer's entry and use of this portal is subject to the terms and conditions of use of the application and the laws of the Kingdom of Saudi Arabia. Thus, his entry constitutes an unconditional approval of the terms and conditions of use of this portal, whether the user of the application is registered or not registered in the application. Moreover, this approval is effective from the date of his first use of this application, and any amendment to these terms and conditions becomes effective immediately after the amendment is made unless an indication otherwise is made by the customer, and it means that the customer continues to use this portal after any modification, his full acceptance of this modification.",
+    "rights" : "2- Intellectual Property Rights:",
+    "rightsDesc" : "The trade name of the company is the 4GO Company for Rent a Car Ltd., its trademark, the trademarks registered in its name, the company's electronic addresses, and all the materials, texts, pictures, graphics, circulars, forms, files, multimedia and software that the site contains, which is guaranteed by the system. It is not permitted to reprint, distribute, modify, or use these materials for any promotional or commercial purposes, or to republish them in any form without the express written permission of the 4GO Company for car rental (4GO CAR RENTAL).",
+    "natureOfApp" : "3- The Nature Of The App:",
+    "natureOfAppDesc" : "This application is considered the main application of the 4GO company that is directed to the corporate sector, and it provides the honorable visitors from this sector with basic information about the company and all the services it provides and its vision in providing its services, offers and discounts, and displays all the new developments in this regard.",
+    "useOfApp" : "4- Use Of The Application:",
+    "useOfAppDesc" : "The company follows up the application and reviews it throughout the day to provide information to the customer about its services. The application also facilitates the communication process between customers and the company regarding any services or notes that may be of interest to the customer. The services and information contained in this application are directed and available for trading within the Kingdom of Saudi Arabia. These services have been provided in accordance with the laws and regulations of the Kingdom of Saudi Arabia related to the provision of such services. Accordingly, the customer may not be eligible to benefit from all the services received, and the company reserves the right to reject any request.",
+    "registrationMechanism" : "5- Registration Mechanism:",
+    "registrationMechanismDesc" : "When registering on the company's website, the customer will be asked to write the user name and password that will be provided to the customer by the company's management, and an activation code will be sent to him when entering the application through the mobile registered and approved by the 4GO company to the customer. Pay attention that when the customer enters this information, besides the activation code sent by the company to his mobile phone approved by the 4GO company in the application, it is considered as an electronic signature and acceptance of electronic transactions and approval in addition to accepting the terms and conditions of using this application mentioned in the previous and subsequent clauses in this agreement.",
+    "companyApp" : "6- Company’s App:",
+    "companyAppDesc" : "Any information or materials sent to the company via the internet through this application become the property of the 4GO Company for car rental (4GO CAR RENTAL), and it is known that the Internet still lacks comprehensive security. Consequently, the responsibility for any information via the Internet is limited to the customer who bears the risks related to that.",
+    "disclaimers" : "7- Disclaimers:",
+    "disclaimersDesc" : "Whatever the case or circumstance, the company is not responsible for any of the following matters, including but not limited to: Negligence that causes any damages or damages of any kind, whether direct, incidental, special or subsequent, or any expenses or losses that may result due to the customer's use of this site or the inability to use it, or the occurrence of some errors or omissions, or the delay in the response of the system, (Due to a defect in the operating or communication systems), a hindrance in operation, malfunctions, exposure of computers to viruses, or a complete failure of the system, or loss of any profits, or the customer's reputation is subjected to damage even if an explicit notification is made of the possibility of such matters occurring, or the occurrence of problems because of Access to the site, enter it, use it, memorize it, or access through it to other sites.",
+    "privacy" : "8- Privacy:",
+    "privacyDesc" : "The company realizes the customer's need to know how to deal with his personal information. The company also realizes the extent of the concern that customers have in terms of privacy, confidentiality and security of the information that the customer provides via the Internet. The company reassures the customer in this regard that it is committed to preserving this information in the strictest of privacy and confidentiality. This permission represents the company's current policy on confidentiality and privacy, and the customer's use of the 4GO application and other company websites means acceptance of the terms and conditions, as well as this confidentiality and privacy statement.",
+
+
+
+    "termsConditions" : "Terms & Conditions",
+    "servicesPrices" : "1- Providing Services And Prices:",
+    "servicesPricesDesc" : "The client's use of the website and the service request is coupled with certain knowledge of the costs and fees of those services and all the information available about them, whether inside or outside the company's website. Furthermore, the customer's use of the site means acceptance of electronic bills and dealing with them with regard to bank and electronic payment, and the 4GO company does not bear any responsibility or financial claims because of that. The customer must view the prices of the cars offered and the value of the service provided by the company and make sure of their correctness, and when there is a mistake, the customer has the right to object to the company.",
+    "clientRequests" : "2- Client Requests:",
+    "clientRequestsDesc": "(A) The Consequences Of Client Requests: The client authorizes the company to act according to requests that appear to be duly valid requests even if they are inconsistent with any other requests at any time regarding the requested services.\n(B) Implementation Of Instructions: Service requests received through the application will always be executed using the customer's password.\n(C) The failure Of The Other PartyThe company is not responsible for any failure on the part of the other party to implement the instructions or any delay or errors on the part of that party when implementing the instructions, whatever the reasons.\n(D) Accuracy And Completeness Of Instructions : The customer must ensure the accuracy and completeness of all the required data, and any incomplete data will not be accepted, and the customer shall be responsible for the errors resulting from the incomplete data. The 4GO Company for car rental (ABUDIYAB CAR RENTAL) will do everything in its power and use all its energies to fulfill the requests of its steemed clients.",
+    "changesUpdates" : "3- Changes and Updates:",
+    "changesUpdatesDesc" : "The company has the right to change these terms and conditions or replace them entirely with other new terms and conditions, or replace a page or pages, which are contained on its websites on the Internet without notice. Furthermore, the customer's continued access to the company's website or use is considered as his approval of the changes that have taken place on the site as previously indicated.\nThe company also has the right to modify the entire site or part of it, or suspend or suspend it temporarily or permanently without prior notice and at any time, it sees convenient.",
+    "generalProvisions" : "4- General Provisions:",
+    "generalProvisionsDesc" : "(A) Applicable Law And Jurisdiction: This document is subject to the electronic transactions system, the information crime control system, and the transport and traffic authority system and is interpreted accordingly. Thus, the customer and the company agree to refer any dispute or dispute that may arise about these terms and conditions to the competent judicial authority.\n(B) The Reference In Case The Records Of the Two Parties Differ: In the event that the data provided by both parties differ, the final reference to the dispute is the data contained in the company's records at the time of contracting or submitting requests.\n(C) 25% (TWENTY-FIVE PERCENT) of the rental amount will be deducted if the reservation is canceled six hours or less before the appointment, in the event that the receipt or cancellation is not made after the reservation date.\n(D) The First Day Of Reservation Will Be Deducted, in the event that the identification documents (ID - driver's license) are not brought.\n(E) 25% (TWENTY-FIVE PERCENT) of the first day's rent will be deducted, in the event that the customer is unable to authorize (an expired license - suspension of services - failure to register or update data in the Absher system),one day's rent will be deducted 85%. \n(F) The rental value is calculated from the date and time specified by the customer in the reservation and not the actual time of receipt in case the customer arrives late. In the event that the customer arrives early, the actual time of receipt is calculated and not the time specified in the reservation.\n(G) According to the policy of the insurance company, in relation to the ages of the customer, if the customer is above 65 years old, he/she must accept one of the conditions below :\n 1- He/she must pay double amount of the deductible fees in case of an accident, according to the amount of the deductible fees for the type of rented car according to the insurance\n2- The contract should be with CDW. * Terms And Conditions Of Hourly Rental Services:\n• Membership benefits cannot be used when requesting the service. \n• Pick-up from airport branches only and delivery at any branch. \n• (200) kilometers per day for all memberships. \n• The maximum service is (5 hours), and when the number of service hours is exceeded, a full day's rent is calculated.",
+    "securityObligations" : "5- The Client’s Security Obligations:",
+    "securityObligationsDesc" : "When registering on the company's website, the customer will be asked to write the user name and password that will be provided to the customer by the company's management, and an activation code will be sent to him when entering the application through the mobile registered and approved by the 4GO company to the customer. Pay attention that when the customer enters this information, besides the activation code sent by the company to his mobile phone approved by the 4GO company in the application, it is considered as an electronic signature and acceptance of electronic transactions and approval in addition to accepting the terms and conditions of using this application mentioned in the previous and subsequent clauses in this agreement.",
+    "acknowledgment" : "6- ACKNOWLEDGMENT OF KNOWLEDGE:",
+    "acknowledgmentDesc" : "The customer acknowledge that he has read these terms and conditions and abides by them without restriction, condition or reservation.",
+
+    "selectArea" : "Select Area",
+
+    "contactUs" : "Contact Us",
+    "address" : "Riyadh, Saudi Arabia",
+    "info" : "Info",
+
+    "faq" : "FAQ",
+    "q1" : "Can I cancel my reservation?",
+    "a1" : "Yes, and it’s quite simple. You can cancel your reservation through your booking details after 2 hours from the booked time.",
+    "q2" : "Can someone else chauffeuring car for me during my booking?",
+    "a2" : "No only the person whose provided theire license.",
+    "q3" : "How will you refund your deposit?",
+    "a3" : "We will refund your deposit to the credit card within at the same moment business days at the time of booking.",
+    "q4" : "What about forgeting any personal belongings  in the car?",
+    "a4" : "4Go does not take any responsibility for any of your belongings. However we suggest you to contact with us  and we will try our best to help you.",
+    "q5" : "Do I need to clean the car?",
+    "a5" : "Yes , Incase you drop off car unclean you will pay a cleaning financial penalty, We recommand continous cleaning of car for your health & comfort",
+    "q6" : "Is smoking allowed in the car?",
+    "a6" : "Smoking isn't allowed  in the car, In case smoking you will pay a smoking financial penalty.",
+
+
+    "directions" : "Directions",
+    "qr" : "QR Code",
+
+    "carName" : "Car Name: ",
+    "carNumber" : "Car Number: ",
+    "color" : "Color: ",
+    "scanQR" : "Scan QR Code",
+
+
+    "addPayment" : "Add Payment",
+    "nameOnTheCard" : "Name On The Card",
+    "cardNumber" : "Card Number",
+    "month" : "mm",
+    "year" : "yy",
+    "cvv" : "CVV",
+    "add" : "Add",
+
+    "location" : "Location: ",
+    "bags" : "Bags",
+    "seats" : "4 Seats",
+    "door" : "Door",
+    "currentPeriod" : "Current Period: ",
+    "hours" : "Hours",
+    "day" : "Day",
+    "minutes" : "Minutes",
+    "book" : "Book",
+    "eg" : "EG",
+    "rate" : "Rates",
+    "notCompleted" : "Not Completed",
+    "plateNumber" : "Plate Number: ",
+    "noPayment" : "We couldn't find any added payment methods, Please Add One to Continue.",
+
+    "pickUpLocations" : "Pick Up Location: ",
+    "pickUpTime" : "Pick Up Time: ",
+    "pickUpDate" : "Pick Up Date: ",
+    "bookingCode" : "Booking Code: ",
+    "bookingDetails" : "Booking Details: ",
+
+    "pickUpDetails" : "Pick Up Details",
+    "dropOffDetails" : "Drop Off Details",
+
+    "additionalServices" : "Additions",
+    "fullInsurance" : "Full Insurance",
+    "shield" : "Shield", 
+    "extraDriver" : "Extra Driver",
+    "valueAddedTax" : "Value Added Tax: ",
+    "total" : "Total: ",
+    "next" : "Next",
+    "paymentMethod" : "Payment Method",
+    "change" : "Change",
+
+
+    "bookDetails" : "Booking Details",
+    "view" : "View",
+    "download" : "Download",
+    "rentalValue" : "Rental Value: ",
+    "pickUpDetails" : "Pick Up Details",
+    "dropOffDetails" : "Drop Off Details",
+    "tammFees" : "TAMM Fees",
+    "fullInsurance" : "Full Insurance",
+    "cancel" : "Cancel",
+    "payNow" : "Pay Now",
+    "ourTime" : "Time: ",
+    "listGarage" : "Garage List",
+    "map" : "Map",
+
+
+    "deleteCredit" : "Delete Credit Card!",
+    "deleteCreditDesc" : "Are You Sure You Want To Delete This Card?",
+    "yesDelete" : "Yes, Delete",
+
+
+
+
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}

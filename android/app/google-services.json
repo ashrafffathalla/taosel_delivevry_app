@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196266779739",
+    "project_id": "taosel",
+    "storage_bucket": "taosel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196266779739:android:c08ab0393ed18869ec4b7e",
+        "android_client_info": {
+          "package_name": "com.example.taosel_user_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo06ChVO-RShuE_G11t6iyRB_lvBv-lfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

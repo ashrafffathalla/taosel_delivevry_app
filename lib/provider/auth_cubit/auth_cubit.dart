@@ -24,7 +24,6 @@ class AuthCubit extends Cubit<AuthState> {
     emit(AuthLoading());
     try {
       await loginRepositories.login(phone: phone, password: password,device_token: device_token);
-      print(device_token.toString()+"GGG");
       emit(AuthLoaded());
     } catch (e) {
 

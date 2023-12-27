@@ -2,13 +2,15 @@ import 'dart:convert';
 
 // import 'package:taoel_driver_app/data/model/country_model.dart';
 import 'package:dio/dio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:taoel_driver_app/data/local/hiva_helper.dart';
 import 'package:taoel_driver_app/data/model/signup_model.dart';
 import 'package:taoel_driver_app/data/remote/dio_helper.dart';
 
 import '../../core/constant/apis.dart';
-
+import '../../core/constant/lang_code.dart';
+import 'package:http/http.dart' as http;
 class SignUpRepositories {
   final DioHelper dioHelper;
   final HiveHelper hiveHelper;
@@ -199,4 +201,106 @@ class SignUpRepositories {
       throw '..Oops $error';
     }
   }
+
+
+  Future<Response> sendDocuments(
+      {required String email,
+        required String name,
+        required String phone,
+        required String password,
+        required String password_confirmation,
+      }) async {
+    try {
+      FormData formData = FormData.fromMap({
+        "name": name,
+        "email": email,
+        "password": password,
+        "password_confirmation": password_confirmation,
+        "phone": "+2$phone",
+      });
+
+      final Response response = await dioHelper.postData(
+        needAuth: false,
+        url: AutomationApi.registerUrl,
+        data: formData,
+      );
+      var data = jsonDecode(response.data) as Map<String, dynamic>;
+      token = data['data']["token"];
+      await HiveHelper().putData('token', token);
+      return response;
+    } on DioError catch (dioError) {
+      var error = jsonDecode(dioError.response!.data) as Map<String, dynamic>;
+      throw textSelect(error['data'].toString());
+    } catch (error) {
+      throw '..Oops $error';
+    }
+  }
+
+  Future<void> uploadDocuments(
+      {required String image,
+        required String driving_image,
+        required String driving_license,
+        required String car_image,
+        required String type_vehicle}) async {
+    try {
+      var item = http.MultipartRequest(
+          "POST", Uri.parse('${AutomationApi.baseUrl}/profile',
+      ),);
+      if (image != "") {
+        item.files.add(
+          await http.MultipartFile.fromPath(
+            "logo",
+            image,
+          ),
+        );
+      }
+      if (driving_image != "") {
+        item.files.add(
+          await http.MultipartFile.fromPath(
+            "driving_image",
+            driving_image,
+          ),
+        );
+      }
+      if (driving_license != "") {
+        item.files.add(
+          await http.MultipartFile.fromPath(
+            "car_image",
+            driving_license,
+          ),
+        );
+      }
+      if (car_image != "") {
+        item.files.add(
+          await http.MultipartFile.fromPath(
+            "car_image",
+            car_image,
+          ),
+        );
+      }
+      item.fields['type_vehicle'] = type_vehicle;
+      item.fields['_method'] = 'PUT';
+      SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+      String? token = sharedPreferences.getString('token');
+      item.headers.addAll({
+        "Accept": "application/json",
+        'Content-type': 'application/json',
+        'Authorization': "Bearer $token",
+         "X-Locale": langCode == '' ? "en" : langCode
+      });
+      var response = await item.send();
+      // print(image.toString()+"Hhhhhhhh1");
+      // print(driving_image.toString()+"Hhhhhhhh2");
+      // print(driving_license.toString()+"Hhhhhhhh3");
+      // print(car_image.toString()+"Hhhhhhhh4");
+      // print(type_vehicle.toString()+"Hhhhhhhh5");
+      // if (response.statusCode == 200) {
+      // } else {
+      //   throw Exception();
+      // }
+    } catch (e) {
+      throw Exception(e);
+    }
+  }
 }
+

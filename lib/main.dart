@@ -13,6 +13,7 @@ import 'package:taoel_driver_app/provider/notification_Cubit/notification_cubit.
 import 'package:taoel_driver_app/provider/profile_cubit/profile_cubit.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:taoel_driver_app/provider/uploadDocument_cubit/uploadDocumentCubit.dart';
 import 'package:taoel_driver_app/view/pages/auth/sign_up/upload_document.dart';
 import 'package:taoel_driver_app/view/pages/splash_screen/splash_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -40,7 +41,7 @@ Future<void> main() async {
   await init();
   await HiveHelper.init();
   Bloc.observer = MyObserver();
-
+/*
   if (Platform.isIOS) {
     // await Firebase.initializeApp(
     //   name: 'abudiyab',
@@ -78,7 +79,7 @@ Future<void> main() async {
   });
   FirebaseMessaging.onMessage.listen((event) {});
   FirebaseMessaging.onMessageOpenedApp.listen((event) {});
-
+*/
   ///------------- END Firebase Code -------------------
   runApp(const MyApp());
 }
@@ -105,13 +106,14 @@ class MyApp extends StatelessWidget {
             BlocProvider(
                 create: (context) => getIt<AllOrdersCubit>()..getAllOrders()),
             BlocProvider(
-                create: (context) => getIt<NotificationCubit>()..getAllNotification()),
+                create: (context) => getIt<NotificationCubit>()..getAllNotification()),BlocProvider(
+                create: (context) => getIt<UploadDocumentCubit>()),
             // BlocProvider(
             //     create: (BuildContext context) => FacebookLoginCubit()),
           ],
           child: BlocBuilder<LanguageCubit, Locale>(builder: (_, locale) {
             return MaterialApp(
-              title: 'Taosel',
+              title: 'Loates for delivery',
               debugShowCheckedModeBanner: false,
               theme: lightTheme(),
               localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -127,7 +129,7 @@ class MyApp extends StatelessWidget {
                 return supportedLocale.first;
               },
               locale: locale,
-              home: const UploadDocuments(),
+              home:  UploadDocuments(),
             );
           }),
         );

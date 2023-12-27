@@ -39,6 +39,7 @@ dependencies:
   flutter_bloc: ^8.0.1
   bloc: ^8.0.2
   #animation_wrappers: ^0.0.4
+  dropdown_button2: ^2.3.9
   google_maps_flutter: ^2.5.0
   flutter_polyline_points: ^2.0.0
   conditional_builder_null_safety: ^0.0.6

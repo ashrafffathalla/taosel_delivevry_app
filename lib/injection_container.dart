@@ -5,6 +5,7 @@ import 'package:taoel_driver_app/provider/getAllOrders/getAllOrdersCubit.dart';
 import 'package:taoel_driver_app/provider/getAllVendorsCtegoriesCubit/getAllVendorsCtegoriesCubit.dart';
 import 'package:taoel_driver_app/provider/notification_Cubit/notification_cubit.dart';
 import 'package:taoel_driver_app/provider/profile_cubit/profile_cubit.dart';
+import 'package:taoel_driver_app/provider/uploadDocument_cubit/uploadDocumentCubit.dart';
 import 'package:taoel_driver_app/repositories/auth_repositories/forget_pass_repositories.dart';
 import 'package:taoel_driver_app/repositories/auth_repositories/login_repositories.dart';
 import 'package:taoel_driver_app/repositories/auth_repositories/sign_up_repositories.dart';
@@ -43,6 +44,8 @@ Future<void> init() async {
   ));
   getIt.registerFactory(() => AllOrdersCubit(
      repositories: getIt()
+  ));  getIt.registerFactory(() => UploadDocumentCubit(
+     signUpRepositories: getIt()
   ));
   getIt.registerFactory(() => NotificationCubit(
      repositories: getIt()

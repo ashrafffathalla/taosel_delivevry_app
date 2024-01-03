@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:taoel_driver_app/provider/uploadDocument_cubit/uploadDocumentStates.dart';
-
 import '../../repositories/auth_repositories/sign_up_repositories.dart';
 class UploadDocumentCubit extends Cubit<UploadDocumentState> {
   UploadDocumentCubit({
@@ -12,7 +11,7 @@ class UploadDocumentCubit extends Cubit<UploadDocumentState> {
   static UploadDocumentCubit get(context) => BlocProvider.of(context);
 
 
-  //uplod Image
+  //upload Image
   var picker = ImagePicker();
   XFile? imageProfile;
   String imagePathFace = "";

@@ -70,9 +70,9 @@ android {
     signingConfigs {
 
         release {
-            storeFile file('C:/Users/ashraf fathalla/Desktop/deliverykey.jks')
+            storeFile file('C:/Users/Public/delivery.jks')
             storePassword '111111'
-            keyAlias = 'deliverykey'
+            keyAlias = 'delivery'
             keyPassword '111111'
         }
     }

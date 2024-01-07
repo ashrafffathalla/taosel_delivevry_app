@@ -8,12 +8,12 @@ import 'package:taoel_driver_app/core/validation/form_validator.dart';
 import 'package:taoel_driver_app/provider/getAllVendorsCtegoriesCubit/getAllVendorsCtegoriesCubit.dart';
 import 'package:taoel_driver_app/view/widgets/custom_text_feild.dart';
 
-class AddAddress extends StatefulWidget {
+class MapScreen extends StatefulWidget {
   @override
   _MapScreenState createState() => _MapScreenState();
 }
 
-class _MapScreenState extends State<AddAddress> {
+class _MapScreenState extends State<MapScreen> {
   late TextEditingController addressController;
   final _formKey = GlobalKey<FormState>();
   GoogleMapController? mapController;
@@ -84,125 +84,22 @@ class _MapScreenState extends State<AddAddress> {
       key: _formKey,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('أضف العنوان'),
+          title:const Text('جاري البحث عن طلبات جديدة'),
         ),
         body: Stack(
           children: [
             GoogleMap(
               onMapCreated: _onMapCreated,
               onTap: _onMapTapped,
-                myLocationEnabled: true,
+              mapType: MapType.normal,
+              myLocationEnabled: true,
               markers: Set.from(markers),
               initialCameraPosition: const CameraPosition(
               target: LatLng(26.8206, 30.8025),
               zoom: 20,
               ),
             ),
-            Positioned(
-              bottom: 0,
-              child: Container(
-                width: MediaQuery.of(context).size.width/1,
-                height: 200.h,
-                color: Colors.white,
-                child: Column(
-                  children: [
-                    Container(
-                      height: 10.h,
-                      color: Colors.white,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: CustomTextFeild(controller: addressController, type: TextInputType.text, label: 'كتابة العنوان', validat: (value) => FormValidator.mapValidate(context, value),),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            if (_formKey.currentState!.validate()) {
-                              BlocProvider.of<HomeCubit>(context).addNewAddress(address: addressController.text, lat: currentLocation!.latitude, lon: currentLocation!.longitude);
-                              // Navigator.pushAndRemoveUntil(
-                              //     context,
-                              //     MaterialPageRoute<void>(
-                              //         builder: (BuildContext context) =>
-                              //         const LayoutScreen()
-                              //     ),
-                              //         (route) => false);
-                            }
-                          },
-                          child: Padding(
-                            padding:  EdgeInsets.symmetric(vertical: 20.h,horizontal: 15.w),
-                            child: Container(
-                             decoration: BoxDecoration(
-                               color: Theme.of(context).colorScheme.primary,
-                               borderRadius: BorderRadius.circular(8),
-                             ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  'ارسال موقعك الحالي',
-                                  style: TextStyle(
-                                    fontSize: 14.sp,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w600
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        tappedPoint==null?const SizedBox():GestureDetector(
-                          onTap: () {
-                              if (_formKey.currentState!.validate()) {
-                                BlocProvider.of<HomeCubit>(context).addNewAddress(address: addressController.text, lat: tappedPoint!.latitude, lon: tappedPoint!.longitude);
-                                // Navigator.pushAndRemoveUntil(
-                                //     context,
-                                //     MaterialPageRoute<void>(
-                                //         builder: (BuildContext context) =>
-                                //         const LayoutScreen()
-                                //     ),
-                                //         (route) => false);
-                              }
-
-                          },
-                          child: Padding(
-                            padding:  EdgeInsets.symmetric(vertical: 20.h,horizontal: 15.w),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Theme.of(context).colorScheme.primary,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  'المحدد من الخريطه',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w600
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            )
           ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            if (tappedPoint != null) {
-              print('Tapped Point - Lat: ${tappedPoint!.latitude.toString()}, Lng: ${tappedPoint!.longitude}');
-            }else{
-              print('ERRRRRRRORRRRR');
-            }
-          },
-          child: Icon(Icons.location_pin),
         ),
       ),
     );

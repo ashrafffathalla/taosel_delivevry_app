@@ -129,7 +129,7 @@ class MyApp extends StatelessWidget {
                 return supportedLocale.first;
               },
               locale: locale,
-              home:  UploadDocuments(),
+              home:  const SplashScreen(),
             );
           }),
         );

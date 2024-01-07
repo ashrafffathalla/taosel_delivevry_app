@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:taoel_driver_app/view/pages/home/favorite/favorite_screen.dart';
+import 'package:taoel_driver_app/view/pages/home/home/addAdress.dart';
 import 'package:taoel_driver_app/view/pages/home/home/home_screen.dart';
 import 'package:taoel_driver_app/view/pages/home/my_orders/myOrders_screen.dart';
 import 'package:taoel_driver_app/view/pages/home/notification/notification_screen.dart';
@@ -23,8 +24,9 @@ class LayoutScreen extends StatefulWidget {
 class _LayoutScreenState extends State<LayoutScreen> {
 
   int _page = 0;
-  List<Widget> _buildScreens() =>const[
-    HomeScreen(),
+  List<Widget> _buildScreens() =>[
+    // HomeScreen(),
+    MapScreen(),
     MyOrdersScreen(),
     NotificationScreen(),
   ];
@@ -76,7 +78,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
             ),
           ),
         ),
-        title: locale!.myBooking,
+        title: locale!.myOrders,
         textStyle: Theme.of(context)
             .textTheme
             .bodyMedium!

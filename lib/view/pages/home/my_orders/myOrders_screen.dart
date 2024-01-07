@@ -27,7 +27,7 @@ class MyOrdersScreen extends StatelessWidget {
         builder: (context, state) {
           return state is GetAllOrdersLoading?const Center(child: CircularProgressIndicator.adaptive()):Column(
             children: [
-             Expanded(
+               Expanded(
                child: ListView.separated(
                    itemBuilder: (context, index) {
                      return Container(

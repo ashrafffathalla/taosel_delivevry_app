@@ -22,7 +22,12 @@ class UploadDocuments extends StatelessWidget {
     var cubit = UploadDocumentCubit.get(context);
     Size size = MediaQuery.of(context).size;
     return BlocConsumer<UploadDocumentCubit, UploadDocumentState>(
-      listener: (context, state) {},
+      listener: (context, state) {
+        if(state is UploadDocumentLoading){
+           CircularProgressIndicator();
+        }else if(state is UploadDocumentSuccess){
+          Navigator.pop(context);        }
+      },
       builder: (context, state) {
         return Form(
           key: _formKey,
@@ -189,7 +194,7 @@ class UploadDocuments extends StatelessWidget {
                                   type_Vehicle: cubit.typeVehicle.toString());
 }
                           },
-                          child: Text(
+                          child: state is EditProfileLoading?CircularProgressIndicator.adaptive():Text(
                             'ارسال',
                             style:
                                 TextStyle(fontSize: 18.sp, color: Colors.white),

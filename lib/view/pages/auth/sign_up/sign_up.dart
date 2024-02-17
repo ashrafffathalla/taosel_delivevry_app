@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:taoel_driver_app/core/localization/check_local.dart';
 import 'package:taoel_driver_app/core/size_config/size_config.dart';
 import 'package:taoel_driver_app/provider/auth_cubit/auth_cubit.dart';
+import 'package:taoel_driver_app/view/pages/home/layout.dart';
 import 'package:taoel_driver_app/view/widgets/custom_text_feild.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -134,14 +135,7 @@ class _SignUpState extends State<SignUp> {
                   );
                 });*/
 
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => OTP(
-                        namePage: "signUp",
-                        phone: phoneController.text,
-                      )),
-            );
+           navigateAndFinish(context, LayoutScreen());
           }
         },
         builder: (context, state) {

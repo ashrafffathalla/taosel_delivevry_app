@@ -18,7 +18,6 @@ class GetProfileRepository {
       return profileListData;
     } on DioError catch (dioError) {
       var error = jsonDecode(dioError.response!.data) as Map<String, dynamic>;
-
       throw error['message'];
     } catch (error) {
       throw '..Oops $error';

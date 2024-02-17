@@ -39,6 +39,7 @@ class ProfileCubit extends Cubit<ProfileState> {
       profileListProfileData = await getProfileRepository.getProfileData();
       emit(ProfileLoaded(profileListData: profileListProfileData!));
     } catch (e) {
+      print(e.toString());
       emit(ProfileError(error: e.toString()));
     }
   }

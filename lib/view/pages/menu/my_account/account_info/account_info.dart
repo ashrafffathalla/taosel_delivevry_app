@@ -205,7 +205,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       });
                 }
                 if (state is ProfileLoaded) {
-                  userNameController.text = state.profileListData.data!.name!;
+                  userNameController.text = state.profileListData.data!.userName!;
                   emailController.text = state.profileListData.data!.email!;
                   phoneController.text = state.profileListData.data!.phone!;
                 }

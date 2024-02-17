@@ -29,7 +29,11 @@ class MyOrdersScreen extends StatelessWidget {
           return state is GetAllOrdersLoading
               ? const Center(child: CircularProgressIndicator.adaptive())
               : Column(
+            mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    state is GetAllOrdersError?Center(child: Text('لاتوجد لديك طلبات حاليا',style: TextStyle(
+                      fontSize: 18.sp
+                    ),)):
                     Expanded(
                       child: ListView.separated(
                           itemBuilder: (context, index) {

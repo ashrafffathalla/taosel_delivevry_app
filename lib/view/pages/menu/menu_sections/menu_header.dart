@@ -31,17 +31,17 @@ class MenuHeader extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  radius: 35.sp, // Image radius
-                  backgroundImage:  NetworkImage(
-                    BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.media==null? 'https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg':  BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.media.toString(),
-                  ),
-                ),
+                // CircleAvatar(
+                //   radius: 35.sp, // Image radius
+                //   backgroundImage:  NetworkImage(
+                //     BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.media==null? 'https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg':  BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.media.toString(),
+                //   ),
+                // ),
                 SizedBox(width: size.width*0.02,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.name.toString(),
+                    Text(BlocProvider.of<ProfileCubit>(context).profileListProfileData!.data!.userName.toString(),
                       style: TextStyle(
                       color: Colors.white,
                       fontSize: 14.sp,

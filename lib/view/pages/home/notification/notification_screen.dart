@@ -20,7 +20,7 @@ class NotificationScreen extends StatelessWidget {
           body:state is GetNotificationLoadingState?const Center(child: CircularProgressIndicator.adaptive()): SingleChildScrollView(
             child: Column(
               children: [
-                cubit.notificationModel!.data==null?Center(
+                cubit.notificationModel==null||state is GetNotificationErrorState?Center(
                   child: Column(
                     children: [
                       SizedBox(

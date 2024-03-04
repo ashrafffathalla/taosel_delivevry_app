@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     BlocProvider.of<ProfileCubit>(context).getProfileData();
-    BlocProvider.of<HomeCubit>(context).getAllCategoryVendorsFun();
+    // BlocProvider.of<HomeCubit>(context).getAllCategoryVendorsFun();
     // BlocProvider.of<GetAllVendorsCategoriesCubit>(context).getAllVendors();
 
     BlocProvider.of<HomeCubit>(context)
@@ -225,7 +225,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         ),
-
                         /// -------------Horizontal List------------
                         SizedBox(
                           height: size.height * 0.03,
@@ -245,9 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     selectedIndex = index;
                                     // BlocProvider.of<GetAllVendorsCategoriesCubit>(context).showVendorModel =null;
                                     BlocProvider.of<
-                                        HomeCubit>(
-                                        context)
-                                        .getAllVendorCategory(index + 1);
+                                        HomeCubit>(context).getAllVendorCategory(index + 1);
                                   });
                                 },
                                 child: Container(
@@ -309,7 +306,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ],
                         ),
-
                         ///---------Grid ITEMS------------
                         SizedBox(
                             height: size.height * 0.4,

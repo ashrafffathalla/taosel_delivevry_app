@@ -165,8 +165,7 @@ class ADStatusDialog extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () => Navigator.of(context).pop(true),
               style: ElevatedButton.styleFrom(
-                elevation: 2.0,
-                primary: status ? Colors.green : Colors.red,
+                elevation: 2.0, backgroundColor: status ? Colors.green : Colors.red,
                 minimumSize: Size(180, 60),
                 shape: StadiumBorder(),
                 textStyle: TextStyle(color: Colors.white),

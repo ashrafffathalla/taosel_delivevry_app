@@ -31,7 +31,7 @@ class MyOrdersScreen extends StatelessWidget {
               : Column(
             mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    state is GetAllOrdersError?Center(child: Text('لاتوجد لديك طلبات حاليا',style: TextStyle(
+                    state is GetAllOrdersError||cubit.getAllOrdersModel!.data==null?Center(child: Text('لاتوجد لديك طلبات حاليا',style: TextStyle(
                       fontSize: 18.sp
                     ),)):
                     Expanded(
@@ -167,8 +167,7 @@ class MyOrdersScreen extends StatelessWidget {
                               height: 7.h,
                             );
                           },
-                          itemCount:
-                              cubit.getAllOrdersModel!.data!.orders!.length),
+                          itemCount: cubit.getAllOrdersModel!.data!.orders!.length),
                     ),
                     SizedBox(
                       height: size.height * 0.08,

@@ -3,10 +3,10 @@ class AutomationApi {
   //**************** Authentication *******************//
   static const loginUrl = "$baseUrl/auth/login"; //post
   static const registerUrl = "$baseUrl/auth/register-driver"; //post
-  static const checkOtpRegisterUrl = "$baseUrl/auth/reset/check_code"; //post
+  static const checkOtpRegisterUrl = "$baseUrl/auth/verify-phone"; //post
   static const changePhoneUrl = "$baseUrl/change_phone"; //post
   static const verifyPhone = "$baseUrl/verify-phone"; //post
-  static const verifieyPhoneUrl = "$baseUrl/auth/check-phone"; //post
+  static const verifieyPhoneUrl = "$baseUrl/auth/forget"; //post
   static const changePasswordUrl = "$baseUrl/change-password"; //post
   static const updateAllProfileUrl = "$baseUrl/profile"; //post
   static const getAlCategorylVendors = "$baseUrl/vendor-categories"; //get

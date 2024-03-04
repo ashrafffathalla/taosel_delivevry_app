@@ -166,7 +166,7 @@ class SignUpRepositories {
         needAuth: true,
         url: AutomationApi.verifyPhone,
         data: {
-          "otp": otp,
+          "code": otp,
         },
       );
       // var data = jsonDecode(response.data) as Map<String, dynamic>;
@@ -265,7 +265,7 @@ class SignUpRepositories {
       if (driving_license != "") {
         item.files.add(
           await http.MultipartFile.fromPath(
-            "car_image",
+            "driving_license",
             driving_license,
           ),
         );

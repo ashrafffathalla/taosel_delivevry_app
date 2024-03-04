@@ -112,11 +112,14 @@ class UploadDocumentCubit extends Cubit<UploadDocumentState> {
           .uploadDocuments(
           image: imagePathFace == "" ? "" : imagePathFace,
           driving_image: licenceImagePathFace== "" ? "" :licenceImagePathFace,
-          driving_license: licenceImagePathFace== "" ? "" :licenceImagePathFace,
+          driving_license: carLicenceImagePathFace== "" ? "" :carLicenceImagePathFace,
           car_image: carImagePathFace== "" ? "" :carImagePathFace,
           type_vehicle: typeVehicle.toString());
       emit(EditProfileLoaded());
       print("Ashraf " + imagePathFace.toString());
+      print("Ashraf " + licenceImagePathFace.toString());
+      print("Ashraf $imagePathFace");
+      print("Ashraf $typeVehicle");
     } catch (e) {
       log(e.toString());
       emit(EditProfileError(e.toString()));

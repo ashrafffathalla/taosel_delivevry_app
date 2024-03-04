@@ -16,10 +16,18 @@ import '../../../widgets/custom_text_feild.dart';
 import '../otp/otp.dart';
 import '../widget/background.dart';
 
-class ChangePassword extends StatelessWidget {
-  final phoneController = TextEditingController();
-  final _formKey = GlobalKey<FormState>();
+class ChangePassword extends StatefulWidget {
+
   ChangePassword({Key? key}) : super(key: key);
+
+  @override
+  State<ChangePassword> createState() => _ChangePasswordState();
+}
+
+class _ChangePasswordState extends State<ChangePassword> {
+  final phoneController = TextEditingController();
+
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +86,7 @@ class ChangePassword extends StatelessWidget {
                         style: CheckLocal.isDirectionRTL(context)
                             ? Theme.of(context)
                             .textTheme
-                            .bodyText1!
+                            .bodyLarge!
                             .copyWith(
                           fontSize: 16,
                           color: Colors.black,
@@ -86,7 +94,7 @@ class ChangePassword extends StatelessWidget {
                         )
                             : Theme.of(context)
                             .textTheme
-                            .bodyText1!
+                            .bodyLarge!
                             .copyWith(
                             fontSize: 20,
                             color: Colors.black,

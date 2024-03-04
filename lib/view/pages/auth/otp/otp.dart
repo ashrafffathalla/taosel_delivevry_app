@@ -338,7 +338,6 @@ class _OTPState extends State<OTP> {
                                     ),backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent)),
                                 onPressed: () {
                                   if (currentText.length == 4) {
-                                    print('ssss');
                                     BlocProvider.of<AuthCubit>(context)
                                         .checkOtp(otpControler.text);
                                     }

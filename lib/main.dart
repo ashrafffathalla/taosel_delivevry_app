@@ -102,7 +102,7 @@ class MyApp extends StatelessWidget {
             BlocProvider<AuthCubit>(create: (context) => getIt<AuthCubit>()),
             BlocProvider<HomeCubit>(create: (context) => getIt<HomeCubit>()),
             BlocProvider<ProfileCubit>(
-                create: (context) => getIt<ProfileCubit>()),
+                create: (context) => getIt<ProfileCubit>()..getProfileData()),
             BlocProvider(
                 create: (context) => getIt<AllOrdersCubit>()..getAllOrders()),
             BlocProvider(
@@ -129,7 +129,7 @@ class MyApp extends StatelessWidget {
                 return supportedLocale.first;
               },
               locale: locale,
-              home:  UploadDocuments(),
+              home:  const SplashScreen(),
             );
           }),
         );

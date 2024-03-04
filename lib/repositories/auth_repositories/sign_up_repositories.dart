@@ -66,7 +66,7 @@ class SignUpRepositories {
       }) async {
     try {
       FormData formData = FormData.fromMap({
-        "name": name,
+        "user_name": name,
         "email": email,
         "password": password,
         "password_confirmation": password_confirmation,

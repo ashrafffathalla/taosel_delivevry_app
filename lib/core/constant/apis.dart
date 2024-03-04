@@ -2,7 +2,7 @@ class AutomationApi {
   static const baseUrl = "https://taosel.com/api/driver";
   //**************** Authentication *******************//
   static const loginUrl = "$baseUrl/auth/login"; //post
-  static const registerUrl = "$baseUrl/auth/register-client"; //post
+  static const registerUrl = "$baseUrl/auth/register-driver"; //post
   static const checkOtpRegisterUrl = "$baseUrl/auth/reset/check_code"; //post
   static const changePhoneUrl = "$baseUrl/change_phone"; //post
   static const verifyPhone = "$baseUrl/verify-phone"; //post
@@ -14,7 +14,7 @@ class AutomationApi {
   static const addAddition = "$baseUrl/cart/store"; //get
   static const getAllVendorCategory = "$baseUrl/vendor-categories/"; //get
   static const showOrderCart = "$baseUrl/order/store"; //post
-  static const getAllOrder = "$baseUrl/order"; //get
+  static const getAllOrder = "$baseUrl/all_order"; //get
   static const cancelOrder = "$baseUrl/order/cancel"; //get
   static const getNotification = "$baseUrl/notification"; //get
   static const sendLocation = "$baseUrl/address"; //get

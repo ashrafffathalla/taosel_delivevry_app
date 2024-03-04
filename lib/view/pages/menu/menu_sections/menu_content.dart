@@ -14,7 +14,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../../core/localization/language_cubit.dart';
 import '../../../../core/size_config/size_config.dart';
 import '../../../../provider/auth_cubit/auth_cubit.dart';
-import '../my_account/account_info/account_Informations.dart';
+import '../../auth/account information/accountinfo.dart';
 
 class BuildMenuItem extends StatefulWidget {
   const BuildMenuItem({Key? key}) : super(key: key);

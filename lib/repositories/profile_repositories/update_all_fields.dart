@@ -42,7 +42,6 @@ class UpdateAllFields {
 
   }) async {
     try {
-      print('ssss');
       final Response response = await dioHelper.postData(
           url: AutomationApi.updateAllProfileUrl,
           data: {

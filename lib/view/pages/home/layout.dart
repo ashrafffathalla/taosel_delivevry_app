@@ -14,6 +14,8 @@ import 'package:taoel_driver_app/view/pages/home/notification/notification_scree
 import 'package:taoel_driver_app/view/pages/home/search/search_screen.dart.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../../../provider/profile_cubit/profile_cubit.dart';
+
 
 class LayoutScreen extends StatefulWidget {
   const LayoutScreen({Key? key}) : super(key: key);
@@ -35,7 +37,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   late PersistentTabController _controller;
   @override
   void initState() {
-
+    BlocProvider.of<ProfileCubit>(context).getProfileData();
     super.initState();
     _controller = PersistentTabController(initialIndex: 0);
   }

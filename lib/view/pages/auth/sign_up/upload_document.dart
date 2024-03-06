@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:taoel_driver_app/provider/uploadDocument_cubit/uploadDocumentStates.dart';
 import '../../../../core/size_config/size_config.dart';
 import '../../../../provider/uploadDocument_cubit/uploadDocumentCubit.dart';
+import '../../../../core/localization/check_local.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class UploadDocuments extends StatelessWidget {
   UploadDocuments({super.key});
@@ -22,7 +24,33 @@ class UploadDocuments extends StatelessWidget {
     var cubit = UploadDocumentCubit.get(context);
     Size size = MediaQuery.of(context).size;
     return BlocConsumer<UploadDocumentCubit, UploadDocumentState>(
-      listener: (context, state) {},
+      listener: (context, state) {
+        if(state is UploadDocumentSuccess){
+          showDialog(
+              context: context,
+              builder: (_) {
+                return AlertDialog(
+                  title: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Center(
+                          child:
+                          Icon(LineAwesomeIcons.check_circle,color: Colors.green,)),
+                    ],
+                  ),
+                  content: Center(
+                    child: Text(
+                      CheckLocal.isDirectionRTL(context)
+                          ? "تم تعديل الوثائق"
+                          : "Success Upload",
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                );
+              });
+        }
+      },
       builder: (context, state) {
         return Form(
           key: _formKey,
